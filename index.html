@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To Do</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h1 class="title">TODO LIST</h1>
+                <form>
+                    <div class="input-task">
+                        <input
+                            type="text"
+                            id="text"
+                            plaseholder="Какие у вас планы?"
+                        />
+                        <button class="button-task" onclick="addTask()">
+                            Добавить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="content">
+            <div class="tasks" id="tasks"></div>
+            <button onclick="removeTasks()" type="submit">ОЧИСТИТЬ</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
